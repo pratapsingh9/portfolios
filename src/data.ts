@@ -72,6 +72,14 @@ export const portfolioData: PortfolioData = {
       title: "AWS Academy Cloud Operations",
       issuer: "Amazon Web Services",
       date: "April 2025",
+    },{
+      title: "OCI Foundations Associate",
+      issuer: "Oracle",
+      date: "July 2025",
+    },{
+      title: "Oracle Cloud Infrastructure 2025 AI Foundations Associate",
+      issuer: "Oracle",
+      date: "July 2025",
     }
   ]
 };

@@ -49,7 +49,8 @@ const App: FC = () => {
       `}</style>
       <div className="bg-[var(--background)] text-[var(--foreground)] font-mono leading-normal tracking-tight min-h-screen flex flex-col">
         <Header theme={theme} toggleTheme={toggleTheme} activeLink={activeLink} />
-        <main className="container mx-auto px-6 md:px-8 max-w-3xl flex-grow">
+        {/* The change is in the line below */}
+        <main className="container mx-auto px-6 md:px-8 max-w-5xl flex-grow">
           <HomeSection />
           <ProjectsSection />
           <SkillsSection />
@@ -63,4 +64,3 @@ const App: FC = () => {
 }
 
 export default App;
-
