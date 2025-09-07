@@ -5,7 +5,7 @@ import AnimatedSection from './AnimatedSection';
 
 const ProjectsSection: FC = () => (
   <AnimatedSection id="projects">
-    <h2 className="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-8 border-b border-[var(--border)] pb-2">Featured Projects</h2>
+    <h2 className="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-8 border-b border-[var(--border)] pb-2 h-full">Featured Projects</h2>
     <div className="space-y-8">
       {portfolioData.projects.map((project, index) => (
         <div key={index}>

@@ -9,6 +9,8 @@ export const portfolioData: PortfolioData = {
     email: "pratap.09082005@gmail.com",
     github: "https://github.com/pratapsingh9",
     linkedin: "https://linkedin.com/in/pratapsingh9",
+    leetcode: "https://leetcode.com/u/pratapsingh2005",
+    codechef: "https://www.codechef.com/users/hannu_98",
   },
   projects: [
     {

@@ -29,6 +29,8 @@ export interface PortfolioData {
     email: string;
     github: string;
     linkedin: string;
+    leetcode: string;
+    codechef: string;
   };
   projects: Project[];
   skills: {

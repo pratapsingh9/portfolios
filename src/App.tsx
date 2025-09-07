@@ -21,6 +21,8 @@ const App: FC = () => {
             --accent: #3b82f6;
             --muted: #f1f5f9;
             --border: #e5e7eb;
+            --scrollbar-thumb: #cbd5e1;
+            --scrollbar-thumb-hover: #94a3b8;
         }
         html[data-theme="dark"] {
             --background: #0d1117;
@@ -28,6 +30,8 @@ const App: FC = () => {
             --accent: #3b82f6;
             --muted: #161b22;
             --border: #303d36;
+            --scrollbar-thumb: #475569;
+            --scrollbar-thumb-hover: #64748b;
         }
         .active-nav {
             text-decoration-line: underline;
@@ -46,10 +50,34 @@ const App: FC = () => {
         .animate-fade-in {
             animation: fade-in 0.5s ease-out forwards;
         }
+        
+        /* Custom scrollbar styles */
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: var(--background);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: var(--scrollbar-thumb);
+          border-radius: 5px;
+          border: 2px solid var(--background);
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: var(--scrollbar-thumb-hover);
+        }
+        
+        /* Firefox scrollbar */
+        html {
+          scrollbar-width: thin;
+          scrollbar-color: var(--scrollbar-thumb) var(--background);
+        }
       `}</style>
       <div className="bg-[var(--background)] text-[var(--foreground)] font-mono leading-normal tracking-tight min-h-screen flex flex-col">
         <Header theme={theme} toggleTheme={toggleTheme} activeLink={activeLink} />
-        {/* The change is in the line below */}
         <main className="container mx-auto px-6 md:px-8 max-w-5xl flex-grow">
           <HomeSection />
           <ProjectsSection />
